@@ -1,5 +1,9 @@
 # Changelog
 
+## v1.2
+
+* bug na imagem da fase 3 resolvido.
+
 ## v1.0
 
 * todas as fases planejadas adicionadas.
