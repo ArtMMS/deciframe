@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DesvendaMe</title>
+
+    <link rel="stylesheet" href="css/fase_base.css">
+</head>
+
+<body>
+
+    <main class="game-screen">
+
+        <div class="ambient-light"></div>
+
+        <button id="answerButton" class="answer-button">
+            RESPONDA
+        </button>
+
+    </main>
+
+
+    <!-- MODAL DE RESPOSTA -->
+
+    <div id="modalOverlay" class="modal-overlay hidden">
+
+        <div class="modal">
+
+            <button id="closeModal" class="close-button">
+                X
+            </button>
+
+            <h1>QUAL A RESPOSTA</h1>
+
+            <div class="separator"></div>
+
+            <input
+                type="text"
+                id="answerInput"
+                class="answer-input"
+                autocomplete="off"
+                spellcheck="false"
+            >
+
+            <button id="confirmButton" class="confirm-button">
+                CONFIRMAR
+            </button>
+
+            <p id="feedback" class="feedback"></p>
+
+        </div>
+
+    </div>
+
+
+    <script src="js/fase_base.js"></script>
+
+</body>
+
+</html>
