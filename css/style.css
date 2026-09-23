@@ -1,0 +1,59 @@
+body {
+    background-color: black;
+    color: #00ff00;
+    font-family: "Courier New", monospace;
+
+    margin: 0;
+    padding: 30px;
+
+    text-shadow: 0 0 5px #00ff00;
+}
+
+.terminal {
+    max-width: 900px;
+    position: relative;
+    z-index: 2;
+}
+
+.input-line {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+input {
+    background: transparent;
+    border: none;
+    outline: none;
+
+    color: #00ff00;
+    font-family: inherit;
+    font-size: 1rem;
+
+    width: 300px;
+    padding: 0;
+    margin: 0;
+}
+
+.red {
+    color: red;
+    text-shadow: 0 0 5px red;
+}
+
+.hidden {
+    display: none;
+}
+
+/* MATRIX */
+
+#matrix {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    z-index: 1;
+    display: none;
+}
