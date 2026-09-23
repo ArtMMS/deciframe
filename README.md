@@ -19,11 +19,3 @@ JavaScript
 Web APIs — interação com o navegador
 Web Audio API — efeitos sonoros
 CSS Animations — efeitos visuais e transições
-
-
-## 📋 Roadmap
-
-Versão 0.1 — Protótipo Inicial
-
-    Criar a página inicial
-    Criar o primeiro desafio de teste

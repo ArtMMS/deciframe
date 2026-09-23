@@ -17,9 +17,27 @@ const feedback = document.getElementById("feedback");
     =========================
 */
 
-const correctAnswer = "CERTO";
+const correctAnswer = "piramide";
+
+const nextPage = "fase2.html";
 
 const successSound = new Audio("assets/success.mp3");
+
+
+/*
+    =========================
+    NORMALIZAR TEXTO (remove acentos)
+    =========================
+*/
+
+function normalize(text) {
+
+    return text
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "")
+        .toLowerCase();
+
+}
 
 
 /*
@@ -86,6 +104,13 @@ function correct() {
 
         successSound.play();
 
+
+        setTimeout(() => {
+
+            window.location.href = nextPage;
+
+        }, 5000);
+
     }, 300);
 
 }
@@ -106,7 +131,7 @@ function checkAnswer() {
     }
 
 
-    if (answer.toLowerCase() === correctAnswer.toLowerCase()) {
+    if (normalize(answer) === correctAnswer) {
 
         correct();
 

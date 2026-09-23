@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>O QUE EU SOU?</title>
+
+    <link rel="stylesheet" href="css/fase1.css">
+</head>
+
+<body>
+
+    <main class="game-screen">
+
+        <div class="ambient-light"></div>
+
+        <p class="hidden-message">parece um sapo, mas não é</p>
+
+        <img src="assets/fase1/paper.png" alt="Pista" class="clue-image">
+
+        <button id="answerButton" class="answer-button">
+            RESPONDA
+        </button>
+
+    </main>
+
+
+    <!-- MODAL DE RESPOSTA -->
+
+    <div id="modalOverlay" class="modal-overlay hidden">
+
+        <div class="modal">
+
+            <button id="closeModal" class="close-button">
+                X
+            </button>
+
+            <h1>QUAL A RESPOSTA?</h1>
+
+            <div class="separator"></div>
+
+            <input
+                type="text"
+                id="answerInput"
+                class="answer-input"
+                autocomplete="off"
+                spellcheck="false"
+            >
+
+            <button id="confirmButton" class="confirm-button">
+                CONFIRMAR
+            </button>
+
+            <p id="feedback" class="feedback"></p>
+
+        </div>
+
+    </div>
+
+
+    <script src="js/fase1.js"></script>
+
+</body>
+
+</html>

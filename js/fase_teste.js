@@ -21,6 +21,8 @@ const correctAnswer = "BACON";
 
 const nextPage = "fase1.html";
 
+const successSound = new Audio("assets/success.mp3");
+
 
 /*
     =========================
@@ -80,6 +82,11 @@ function correct() {
         message.textContent = "CERTA RESPOSTA";
 
         document.body.appendChild(message);
+
+
+        successSound.currentTime = 0;
+
+        successSound.play();
 
 
         setTimeout(() => {
