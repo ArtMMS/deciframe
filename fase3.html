@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>O que ele disse?</title>
+
+    <link rel="stylesheet" href="css/fase3.css">
+</head>
+
+<body>
+
+    <main class="game-screen">
+
+        <div class="ambient-light"></div>
+
+        <div class="clue-container">
+
+            <img src="assets/fase3/05_20.jpg" alt="Pista" class="clue-image">
+
+            <p class="hidden-message">Das Geheimnis besteht darin, den Namen auf Englisch zu suchen</p>
+
+        </div>
+
+        <button id="answerButton" class="answer-button">
+            RESPONDA
+        </button>
+
+    </main>
+
+
+    <!-- MODAL DE RESPOSTA -->
+
+    <div id="modalOverlay" class="modal-overlay hidden">
+
+        <div class="modal">
+
+            <button id="closeModal" class="close-button">
+                X
+            </button>
+
+            <h1>QUAL A RESPOSTA?</h1>
+
+            <div class="separator"></div>
+
+            <input
+                type="text"
+                id="answerInput"
+                class="answer-input"
+                autocomplete="off"
+                spellcheck="false"
+            >
+
+            <button id="confirmButton" class="confirm-button">
+                CONFIRMAR
+            </button>
+
+            <p id="feedback" class="feedback"></p>
+
+        </div>
+
+    </div>
+
+
+    <script src="js/fase3.js"></script>
+
+</body>
+
+</html>

@@ -1,5 +1,13 @@
 # Changelog
 
+## v0.4
+
+* FASE 3 adicionada.
+
+## v0.3
+
+* FASE 2 adicionada.
+
 ## v0.2
 
 * Efeito sonoro ao digitar a resposta certa.
