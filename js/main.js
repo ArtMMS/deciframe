@@ -23,7 +23,7 @@ async function clearTerminal() {
 }
 
 async function startIntro() {
-    await typeText("Olá!", 80);
+    await typeText("> Olá!", 80);
     await wait(800);
 
     await typeText(
