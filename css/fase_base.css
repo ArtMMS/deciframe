@@ -61,6 +61,25 @@ body {
 
 
 /* =========================
+   QUADRADO BRANCO CENTRAL
+========================= */
+
+.center-square {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    width: 80px;
+    height: 80px;
+
+    background: #ffffff;
+}
+
+
+/* =========================
    BOTÃO RESPONDA
 ========================= */
 
@@ -418,6 +437,38 @@ body {
     }
 
 }
+
+/* =========================
+   OVERLAY DE ESCURECIMENTO (RESPOSTA CORRETA)
+========================= */
+
+.correct-overlay {
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 15;
+
+    background: #000000;
+
+    opacity: 0;
+
+    animation: overlay-appear 0.6s ease forwards;
+}
+
+
+@keyframes overlay-appear {
+
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 0.97;
+    }
+
+}
+
 
 /* =========================
    RESPOSTA CORRETA

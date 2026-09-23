@@ -98,7 +98,7 @@ async function startMatrix() {
 
     clearInterval(interval);
 
-    window.location.href = "fase1.html";
+    window.location.href = "fase_teste.html";
 }
 
 async function positiveResponse() {

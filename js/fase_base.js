@@ -64,11 +64,18 @@ function correct() {
 
     setTimeout(() => {
 
+        const overlay = document.createElement("div");
+
+        overlay.classList.add("correct-overlay");
+
+        document.body.appendChild(overlay);
+
+
         const message = document.createElement("div");
 
         message.classList.add("correct-message");
 
-        message.textContent = "CΕRTA RESPOSTA";
+        message.textContent = "CERTA RESPOSTA";
 
         document.body.appendChild(message);
 
