@@ -1,0 +1,101 @@
+body {
+    background-color: black;
+    color: #00ff00;
+    font-family: "Courier New", monospace;
+
+    margin: 0;
+    padding: 30px;
+
+    height: 100vh;
+
+    text-shadow: 0 0 5px #00ff00;
+
+    overflow: hidden;
+}
+
+
+.terminal {
+    max-width: 900px;
+    position: relative;
+    z-index: 2;
+}
+
+
+/* =========================
+   PRESENTE
+========================= */
+
+.gift {
+    position: fixed;
+
+    top: -250px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 160px;
+    height: auto;
+
+    display: block;
+
+    z-index: 5;
+
+    pointer-events: none;
+
+    transition:
+        top 1.8s ease-in,
+        transform 1.8s ease-in;
+}
+
+
+.gift.hidden {
+    display: none;
+}
+
+
+.gift.drop {
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+}
+
+
+.gift.landed {
+    pointer-events: auto;
+
+    cursor: pointer;
+}
+
+
+/* =========================
+   EXPLOSÃO BRANCA
+========================= */
+
+.explosion {
+    position: fixed;
+
+    top: 50%;
+    left: 50%;
+
+    width: 220vmax;
+    height: 220vmax;
+
+    background: #ffffff;
+
+    border-radius: 50%;
+
+    transform: translate(-50%, -50%) scale(0);
+
+    animation: explode 0.6s ease forwards;
+
+    z-index: 50;
+}
+
+
+@keyframes explode {
+
+    to {
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+}

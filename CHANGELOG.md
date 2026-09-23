@@ -1,5 +1,9 @@
 # Changelog
 
+## v1.0
+
+* todas as fases planejadas adicionadas.
+
 ## v0.5
 
 * FASE 4 adicionada.
