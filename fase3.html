@@ -18,7 +18,12 @@
 
         <div class="clue-container">
 
-            <img src="assets/fase3/05_20.jpg" alt="Pista" class="clue-image">
+            <img
+                src="assets/fase3/05_20.jpg"
+                alt="Pista"
+                class="clue-image"
+                onerror="this.insertAdjacentHTML('afterend', '<p style=\'color:red;font-size:11px;\'>Falha ao carregar: ' + this.src + '</p>')"
+            >
 
             <p class="hidden-message">Das Geheimnis besteht darin, den Namen auf Englisch zu suchen</p>
 
