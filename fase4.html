@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Quem é o artista?</title>
+
+    <link rel="stylesheet" href="css/fase4.css">
+</head>
+
+<body>
+
+    <main class="game-screen">
+
+        <div class="ambient-light"></div>
+
+        <p class="page-title">MPT-WWW-TA1A</p>
+
+        <div class="phone-container">
+
+            <p id="phoneLine" class="phone-line">___-___-____</p>
+
+            <div class="phone-wrapper" id="phoneWrapper">
+
+                <img src="assets/fase4/celular.png" alt="Celular" class="phone-image">
+
+                <button type="button" class="phone-key" data-digit="1" style="left: 29.5%; top: 40%;"></button>
+                <button type="button" class="phone-key" data-digit="2" style="left: 51.5%; top: 40%;"></button>
+                <button type="button" class="phone-key" data-digit="3" style="left: 73%;   top: 40%;"></button>
+
+                <button type="button" class="phone-key" data-digit="4" style="left: 29.5%; top: 52.5%;"></button>
+                <button type="button" class="phone-key" data-digit="5" style="left: 51.5%; top: 52.5%;"></button>
+                <button type="button" class="phone-key" data-digit="6" style="left: 73%;   top: 52.5%;"></button>
+
+                <button type="button" class="phone-key" data-digit="7" style="left: 29.5%; top: 65%;"></button>
+                <button type="button" class="phone-key" data-digit="8" style="left: 51.5%; top: 65%;"></button>
+                <button type="button" class="phone-key" data-digit="9" style="left: 73%;   top: 65%;"></button>
+
+                <button type="button" class="phone-key" data-digit="0" style="left: 51.5%; top: 77%;"></button>
+
+            </div>
+
+        </div>
+
+        <button id="answerButton" class="answer-button">
+            RESPONDA
+        </button>
+
+    </main>
+
+
+    <!-- MODAL DE RESPOSTA -->
+
+    <div id="modalOverlay" class="modal-overlay hidden">
+
+        <div class="modal">
+
+            <button id="closeModal" class="close-button">
+                X
+            </button>
+
+            <h1>QUAL A RESPOSTA?</h1>
+
+            <div class="separator"></div>
+
+            <input
+                type="text"
+                id="answerInput"
+                class="answer-input"
+                autocomplete="off"
+                spellcheck="false"
+            >
+
+            <button id="confirmButton" class="confirm-button">
+                CONFIRMAR
+            </button>
+
+            <p id="feedback" class="feedback"></p>
+
+        </div>
+
+    </div>
+
+
+    <script src="js/fase4.js"></script>
+
+</body>
+
+</html>

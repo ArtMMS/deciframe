@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.5
+
+* FASE 4 adicionada.
+
 ## v0.4
 
 * FASE 3 adicionada.
